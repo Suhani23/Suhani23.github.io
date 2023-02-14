@@ -1,0 +1,46 @@
+
+
+.selectAlgorithmMain{
+    /* left:10px; */
+    /* position: absolute; */
+    height : 60vh;
+    min-width: 120px;
+    min-height: 200px;
+    width:15vw;
+    text-align: center;
+    font-size: 1.2em; 
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    /* border: 1px solid black; */
+}
+.algorithmList{
+    padding:0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: inherit;
+}
+.headerAlgorithmList{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 140%;
+    color: rgb(46, 44, 44);
+    margin-left: 5px;
+    max-width: inherit;
+}
+.algorithmListItem{
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 100;
+    font-size: 1em;
+    margin-top: 22px;
+    max-width: inherit;
+}
+.isSelectedAlgorithm{
+    color:rgb(236, 53, 202);
+    font-weight: 300;
+}
+

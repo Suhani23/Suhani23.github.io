@@ -1,0 +1,94 @@
+
+.screen{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.slider1{
+    width: 10%;
+    position: absolute;
+}
+.mainArea{
+    /* transition: all 4s ease-in; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100%;
+    
+}
+
+.mainGrid{
+    
+    border-collapse: collapse;
+    flex-direction: column;
+    overflow: auto;
+    margin-bottom: auto;
+    /* background-color:rgb(247, 247, 238); */
+
+}
+.mainGrid-dark{
+    border-collapse: collapse;
+    flex-direction: column;
+    overflow: auto;
+    background-color: rgb(29, 26, 26);
+    margin-bottom: auto;
+}
+
+.onPathFound{
+    animation: pathFound 3s ease;
+    animation-delay: 1s;
+}
+.onPathNotFound{
+    animation: pathNotFound 3s ease;
+    animation-delay: 1s;
+}
+.messageToUser{
+    position: absolute;
+    font-family: oxygen;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    animation: messageToUserFade 4s ease-in-out;
+    margin-bottom: 32%;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+
+.table-body{
+    padding: 0px;
+}
+@keyframes messageToUserFade{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes pathFound{
+   
+    25%{
+        box-shadow: 10px 10px 50px rgb(50, 200, 255),-10px -10px 50px rgb(249, 63, 255);
+    }
+    100%{
+    }
+}
+@keyframes pathNotFound{
+    25%{
+        /* box-shadow: 10px 10px 30px rgb(255, 60, 76),-10px -10px 30px rgb(255, 49, 66); */
+        box-shadow: 10px 10px 50px rgb(50, 200, 255),-10px -10px 50px rgb(249, 63, 255);
+    }
+    100%{
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,44 @@
+.slider-form{
+    transition : all 1s; 
+    /* position: absolute; */
+    display: flex;
+  
+    bottom: 0%;
+    height: 35%;
+    /* margin: 10px; */
+}
+.slider-button{
+    /* position: relative; */
+    border: 1px solid rgb(0, 0, 0);
+    font-family: 'Roboto';
+    font-size: 15px;
+    padding: 6px;
+    font-weight: 200;
+    bottom: 0%;
+    /* left: 20%; */
+    display: flex;
+    align-items: center;
+}
+
+.slider-input-open{
+    transition : all 0.4s; 
+    transform: translateX(10px);
+}
+.slider-input-closed{
+    opacity: 0;
+    transition : all 0.4s; 
+    width: 0px;
+    pointer-events: none;
+    /* transform: translateX(20px); */
+    /* width: 0px; */
+    /* height: 0px; */
+}
+.slider-button:hover{
+    color:  rgb(72, 194, 221);
+    cursor: pointer;
+   
+}
+.slider-button:active{
+ 
+  box-shadow: 0 0 5px -1px #4caf8c;
+}
